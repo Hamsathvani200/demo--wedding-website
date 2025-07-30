@@ -1,0 +1,446 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Wedding HTML-5 Template </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="assets/css/responsive.css">
+   </head>
+
+ <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    /* Preloader */
+    #preloader-active {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .preloader-circle {
+      border: 4px solid #eee;
+      border-top: 4px solid #520a82;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Header */
+    .header-area {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .main-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .main-menu ul li a {
+      text-decoration: none;
+      color: #520a82;
+      font-weight: 500;
+    }
+
+    .main-menu ul li a:hover {
+      color: #000;
+    }
+
+    /* Hero Section */
+    .slider-area {
+      background: url('assets/img/hero/contact_hero.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-cap h2 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 60px 0;
+    }
+
+    .contact-info, .contact-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    .form-control:focus {
+      border-color: #520a82;
+      box-shadow: 0 0 0 0.2rem rgba(82, 10, 130, 0.25);
+    }
+
+    .btn-purple {
+      background-color: #520a82;
+      color: #fff;
+      border: none;
+    }
+
+    .btn-purple:hover {
+      background-color: #3f0666;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      font-size: 14px;
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
+
+    .footer h5 {
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 16px;
+      border-bottom: 2px solid #520a82;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .footer .fa {
+      color: #520a82;
+      margin-right: 8px;
+    }
+
+    .footer ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #444;
+      margin-top: 20px;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    @media (max-width: 576px) {
+      .footer, .main-menu ul {
+        text-align: center;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader-active">
+  <div class="preloader-circle"></div>
+</div>
+
+<!-- Header Start -->
+<header>
+
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Extra Style for Active Link -->
+  <style>
+    #navigation li a.active {
+      border-bottom: 2px solid #ff4081;
+      padding-bottom: 5px;
+      color: #ff4081;
+    }
+
+    @media (max-width: 750px) {
+      .hero__caption h1 {
+        font-size: 26px;
+        line-height: 34px;
+      }
+
+      .services-img img,
+      .story-img img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .singl-services {
+        margin-bottom: 30px;
+      }
+
+      .mission-title {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-area">
+      <div class="main-header header-sticky">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-xl-2 col-lg-2 col-md-2 col-6">
+              <div class="logo">
+                <a ><img src="assets/img/logo/logo.png" alt="Logo" /></a>
+              </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="col-xl-10 col-lg-10 col-md-10 col-6">
+              <div class="main-menu f-right d-none d-lg-block">
+                <nav>
+                  <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="col-12">
+              <div class="mobile_menu d-block d-lg-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- JavaScript for active link -->
+  <script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll('#navigation li a');
+
+    navLinks.forEach(link => {
+      const linkPage = link.getAttribute('href');
+      if (linkPage === currentPage || (linkPage === "index.html" && (currentPage === "" || currentPage === "index.html"))) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+    </div>
+  </div>
+</header>
+
+<!-- Hero Area -->
+<div class="slider-area">
+  <div class="hero-cap">
+    <h2>Contact Us</h2>
+  </div>
+</div>
+
+<!-- Contact Section Start -->
+<section class="contact-section">
+  <div class="container">
+    <div class="row gy-5">
+      
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="contact-info">
+          <h5>Contact Info</h5>
+          <p><i class="fas fa-map-marker-alt me-2 text-purple"></i> Palai, Kilinochchi, Sri Lanka</p>
+          <p><i class="fas fa-phone-alt me-2 text-purple fas fa-envelope"></i> +94 3457946</p>
+          <p><i class="fas fa-envelope me-2 text-purple"></i> haMh4@gmail.com</p>
+          <p><i class="fas fa-clock me-2 text-purple"></i> Mon - Fri: 9:00am - 6:00pm</p>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <div class="contact-form">
+          <h5 class="mb-4">Send Us a Message</h5>
+          <form action="contact_process.php" method="POST">
+            <div class="mb-3">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-purple px-4">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Contact Section End -->
+
+<!-- Footer Start -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 text-center">
+        <img src="assets/img/logo/logo.png" alt="Logo" class="img-fluid mb-2" style="max-height: 70px;"><br>
+        <small>Turning Moments Into Memories<br> Event Planning | Floral Decorations | Party Rental</small>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Address</h5>
+        <p><i class="fa fa-map-marker-alt"></i> Palai, Kilinochchi, Sri Lanka</p>
+        <p><i class="fa fa-phone-alt fa fa-envelope"></i> +94 3457946</p>
+        <p><i class="fa fa-envelope"></i> haMh4@gmail.com</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Services</h5>
+        <ul>
+          <li>Wedding Planning</li>
+          <li>Wedding Photography</li>
+          <li>Floral Decoration</li>
+          <li>Bride/Groom Dressing</li>
+          <li>Poruwa and Services</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom mt-4">
+      &copy; 2025 <strong>H4 AmsHa</strong>. All Rights Reserved. Designed by <a href="#">WEBbuilders.lk</a>
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+<script>
+  // Hide preloader
+  window.addEventListener("load", function() {
+    document.getElementById("preloader-active").style.display = "none";
+  });
+</script>
+
+</body>
+</html>
+
+
+
+ 
+
+
+
+
+   
+</body>
+
+</html>
+   
+	<!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="./assets/js/gijgo.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+		<script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="./assets/js/jquery.scrollUp.min.js"></script>
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/jquery.sticky.js"></script>
+        
+        <!-- contact js -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
+        
+    </body>
+</html>
